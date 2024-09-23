@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Работа №1</title>
+</head>
+<body>
+    <h1>Практичское задание №1</h1>
+    <a href="http://kubsu.ru/">Абсолютная гиперссылка на сайт КубГУ</a><br/>
+    <a href="https://kubsu.ru/">Абсолютная гипперссылка на сайт Кубгу в протоколе https</a><br/>
+<img src="img/image.jpg" alt="Закат" style="width: 356px;" /><br/>
+<a href="/about" > Сокращенная ссылка на внутреннюю страницу</a><br/>
+<a href="/" > Сокращенная ссылка на главную страницу</a><br/>
+<a href="#jump">Ссылка на фрагмент текущей страницы</a><br/>
+<a href="https://example.com/page?param1=value1&param2=value2&param3=value3">Ссылка с параметрами</a><br/>
+<a href="https://example.com/page?id=123">Ссылка с параметром ID</a><br/>
+<a href="index_relativeReference.html"> Относительная ссылка внутри каталога</a><br/>
+<a href="about/page.html">Cсылка на относительную на страницу в каталоге about</a><br/>
+<a href="../index.html">Ссылка в каталог уровнем выше текущего </a><br/>
+<a href="../../index.html">Ссылка в каталог двумя уровнями выше текущего </a><br/>
+Контекстная ссылка <a href="https://www.kubsu.ru"> ведёт на сайт КубГУ</a><br/>
+<a href="https://ru.wikipedia.org/wiki/HTML#:~:text=%D0%A0%D1%8B%D0%BD%D0%BE%D1%87%D0%BD%D1%8B%D0%B5%20%D0%B4%D0%BE%D0%BB%D0%B8).-,%D0%92%D0%B5%D1%80%D1%81%D0%B8%D0%B8,-%5B%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C%20%7C" >Ссылка на фрагмент страницы стороннего сайта</a><br>
+<img src="img/image2.jpg" alt="Изображние" usemap="#imgmap" style="width: 356px;">
+<map name="imgmap">
+    <area shape="rect" coords="34,44,270,350" href="http://kubsu.ru/" alt="Прямоугольная область">
+    <area shape="circle" coords="100,100,50" href="http://kubsu.ru/" alt="Окружность">
+</map><br>
+<a href="#">Ссылка с пустым href</a><br/>
+<a>Ссылка без href</a><br/>
+<a href="https://www.kubsu.ru" rel="nofollow">  Ссылка, по которой запрещен переход поисковикам</a><br/>
+<a href="https://www.kubsu.ru" rel="noindex"> Ссылка, запрещенная для индексации поисковиками</a><br/>
+Нумерованный список ссылок с подписями title:
+    <ol>
+        <li><a href="https://www.youtube.com/shorts/3n0HhQwP3_8" title ="Котики">Котики</a></li>
+        <li><a href="https://www.youtube.com/shorts/FYgvaRL2glU" title="Собачка"> Собачка</a></li>
+        <li><a href="https://www.youtube.com/shorts/E5HHMl3VVlQ" title ="Бобёр"> Бобёр</a></li>
+    </ol>
+<a href="ftp://username:password@ftp.example.com/file.txt"> Cсылка на файл на сервере FTP с авторизацией</a><br/>
+<h2 id="jump"> Маркер для пункта №6 </h2>
+    <h1>Форма HTML</h1>
+    <form action="/"
+    method="POST">
+    <label>
+        ФИО:<br />
+        <input name="field-name-1">
+      </label><br />
+
+    <label>
+        Телефон:<br/>
+        <input tel = "field-tel"
+            type="tel"
+            placeholder="Введите ваш телефон"/>
+    </label><br/>
+
+    <label>
+        Текстовое поле email:<br />
+        <input name="field-email"
+          type="email"
+          placeholder="Введите вашу почту" />
+      </label><br />
+
+      <label>
+        Дата рождения:<br/>
+        <input date = "field-date"
+            type = "date">
+      </label><br/>
+      Выберете ваш пол:<br />
+      <label><input type="radio" checked="checked"
+        name="radio" value="Мужской" />
+        Мужской</label>
+      <label><input type="radio"
+        name="radio" value="Женский" />
+        Женский</label><br />
+
+        <label>
+            Ваш любимый язык программирования:<br />
+            <select name="field-name-4[]"
+              multiple="multiple">
+              <option value="Значение_1">Pascal</option>
+              <option value="Значение_2" selected="selected">C</option>
+              <option value="Значение_3" selected="selected">C++</option>
+              <option value="Значение_4" selected="selected">JavaScript</option>
+              <option value="Значение_5" selected="selected">PHP</option>
+              <option value="Значение_6" selected="selected">Python</option>
+              <option value="Значение_7" selected="selected">Java</option>
+              <option value="Значение_8" selected="selected">Haskel</option>
+              <option value="Значение_9" selected="selected">Clojure</option>
+              <option value="Значение_10" selected="selected">Prolog</option>
+              <option value="Значение_11" selected="selected">Scala</option>
+            </select>
+          </label><br />
+
+          <label>
+            Ваша биография:<br />
+            <textarea name="field-name-2"></textarea>
+          </label><br />
+
+          С контрактом ознакомлен
+      <label><input type="checkbox" checked="checked"
+        name="check-1" />
+        </label>
+      <input type="submit" value="Сохранить" />
+    </form>
+</body>
+</html>
