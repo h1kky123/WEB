@@ -25,79 +25,139 @@
 </header>
 
 <div class="Content">
-  <h1 class=mainText"">Список гиперссылок</h1>
+  <h1 class="mainText">Список гиперссылок</h1>
   <div class="line1">
-  <li><a href="//www.kubsu.ru">Абсолютная гипперссылка на сайт Кубгу</a></li></br>
-  <li><a href="https://kubsu.ru/">Абсолютная гипперссылка на сайт Кубгу в протоколе https</a></li><br/>
-  <a href="https://github.com/"><img src="img/image.jpg" alt="Закат" style="width: 356px;" /></a><br/>
-  <li><a href="/about" > Сокращенная ссылка на внутреннюю страницу</a></li><br/>
-  <li><a href="/" > Сокращенная ссылка на главную страницу</a></li><br/>
-  <li><a href="#jump">Ссылка на фрагмент текущей страницы</a></li><br/>
-  <li><a href="index.html?product=width&color=black&size=m">Ссылка с параметрами</a></li><br/>
-  <li><a href="index.html?id=123">Ссылка с параметром ID</a></li><br/>
-  <li><a href="index_relativeReference.html"> Относительная ссылка внутри каталога</a></li><br/>
-  <li><a href="about/page.html">Cсылка на относительную на страницу в каталоге about</a></li><br/>
-  <li><a href="../index.html">Ссылка в каталог уровнем выше текущего </a></li><br/>
-  <li><a href="../../index.html">Ссылка в каталог двумя уровнями выше текущего </a></li><br/>
-  <li>Контекстная ссылка <a href="https://www.kubsu.ru"> ведёт на сайт КубГУ</a></li><br/>
-  <li><a href="https://ru.wikipedia.org/wiki/HTML#:~:text=%D0%A0%D1%8B%D0%BD%D0%BE%D1%87%D0%BD%D1%8B%D0%B5%20%D0%B4%D0%BE%D0%BB%D0%B8.-,%D0%92%D0%B5%D1%80%D1%81%D0%B8%D0%B8,-%5B%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C%20%7C" >Ссылка на фрагмент страницы стороннего сайта</a><br>
-  <li> Ссылки из прямоугольных и круглых областей картинки</li><br>
-  <img src="img/image2.jpg" alt="Изображние" usemap="#imgmap" style="width: 356px;">
-  <map name="imgmap">
-    <area shape="rect" coords="0,0,200,330" href="https://kubsu.ru">
-    <area shape="circle" coords="20,20,300,400" href="https://github.com/">
-  </map><br><br>
-  <li><a href="#">Ссылка с пустым href</a></li><br/>
-  <li><a>Ссылка без href</a></li><br/>
-  <li><a href="https://www.kubsu.ru" rel="nofollow">  Ссылка, по которой запрещен переход поисковикам</a></li><br/>
-  <li><a href="https://www.kubsu.ru" rel="noindex"> Ссылка, запрещенная для индексации поисковиками</a></li><br/>
+    <li><a href="//www.kubsu.ru">Абсолютная гипперссылка на сайт Кубгу</a></li></br>
+    <li><a href="https://kubsu.ru/">Абсолютная гипперссылка на сайт Кубгу в протоколе https</a></li><br/>
+    <a href="https://github.com/"><img src="img/image.jpg" alt="Закат" style="width: 356px;" /></a><br/>
+    <li><a href="/about" > Сокращенная ссылка на внутреннюю страницу</a></li><br/>
+    <li><a href="/" > Сокращенная ссылка на главную страницу</a></li><br/>
+    <li><a href="#jump">Ссылка на фрагмент текущей страницы</a></li><br/>
+    <li><a href="index.html?product=width&color=black&size=m">Ссылка с параметрами</a></li><br/>
+    <li><a href="index.html?id=123">Ссылка с параметром ID</a></li><br/>
+    <li><a href="index_relativeReference.html"> Относительная ссылка внутри каталога</a></li><br/>
+    <li><a href="about/page.html">Cсылка на относительную на страницу в каталоге about</a></li><br/>
+    <li><a href="../index.html">Ссылка в каталог уровнем выше текущего </a></li><br/>
+    <li><a href="../../index.html">Ссылка в каталог двумя уровнями выше текущего </a></li><br/>
+    <li>Контекстная ссылка <a href="https://www.kubsu.ru"> ведёт на сайт КубГУ</a></li><br/>
+    <li><a href="https://ru.wikipedia.org/wiki/HTML#:~:text=%D0%A0%D1%8B%D0%BD%D0%BE%D1%87%D0%BD%D1%8B%D0%B5%20%D0%B4%D0%BE%D0%BB%D0%B8.-,%D0%92%D0%B5%D1%80%D1%81%D0%B8%D0%B8,-%5B%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C%20%7C" >Ссылка на фрагмент страницы стороннего сайта</a><br>
+    <p><li>Ссылки из прямоугольных и круглых областей картинки</li></p>
+    <img src="img/image2.jpg" alt="Изображние" usemap="#imgmap" style="width: 356px;">
+    <map name="imgmap">
+      <area shape="rect" coords="0,0,200,330" href="https://kubsu.ru">
+      <area shape="circle" coords="20,20,300,400" href="https://github.com/">
+    </map><br><br>
+    <li><a href="#">Ссылка с пустым href</a></li><br/>
+    <li><a>Ссылка без href</a></li><br/>
+    <li><a href="https://www.kubsu.ru" rel="nofollow">  Ссылка, по которой запрещен переход поисковикам</a></li><br/>
+    <li><a href="https://www.kubsu.ru" rel="noindex"> Ссылка, запрещенная для индексации поисковиками</a></li><br/>
     <ol>
         <li><a href="https://www.youtube.com/shorts/3n0HhQwP3_8" title ="Котики">Котики</a></li>
         <li><a href="https://www.youtube.com/shorts/FYgvaRL2glU" title="Собачка"> Собачка</a></li>
         <li><a href="https://www.youtube.com/shorts/E5HHMl3VVlQ" title ="Бобёр"> Бобёр</a></li>
     </ol>
-  <li><a href="ftp://username:password@ftp.example.com/file.txt"> Cсылка на файл на сервере FTP с авторизацией</a></li><br/>
-  <h2 id="jump"> Маркер для пункта №6 </h2>
+    <li><a href="ftp://username:password@ftp.example.com/file.txt"> Cсылка на файл на сервере FTP с авторизацией</a></li><br/>
+    <h2 id="jump"> Маркер для пункта №6 </h2>
   </div>
 </div>
 
+<div class="tabl">
+  <h2 class="textTabl">Таблица</h2>
+  <table class="tabl">
+    </h1>
+    <thead style="background-color: mediumslateblue;">
+      <td>Герой</td>
+      <td>Сила</td>
+      <td>Ловкость</td>
+      <td>Интеллект</td>
+    </thead>
 
+    <tbody>
 
+      <tr style="background-color: dimgrey;">
+        <th>Axe</th>
+        <th>25</th>
+        <th>20</th>
+        <th>18</th>
+      </tr>
 
+      <tr style="background-color: mediumslateblue;">
+        <th>Arc Warden</th>
+        <th>20</th>
+        <th>20</th>
+        <th>24</th>
+      </tr>
 
+      <tr style="background-color: dimgrey;">
+        <th>Bristleback</th>
+        <th>22</th>
+        <th>17</th>
+        <th>14</th> 
+      </tr>
 
+      <tr style="background-color: mediumslateblue;">
+        <th>Luna</th>
+        <th>21</th>
+        <th>24</th>
+        <th>23</th>
+      </tr>
 
-    <h1>Форма HTML</h1>
-    <form action="/"
-    method="POST">
-    <label>
-        ФИО:<br />
-        <input name="field-name-1">
-      </label><br />
+      <tr style="background-color: dimgrey;">
+       <th>Storm Spirit</th>
+       <th>21</th>
+        <th>22</th>
+        <th>23</th>
+      </tr>
 
-    <label>
-        Телефон:<br/>
-        <input tel = "field-tel"
-            type="tel"
-            placeholder="Введите ваш телефон"/>
+      <tr>
+        <td colspan="4" style="background-color: mediumslateblue;">Самый сильный герой из всей таблицы это - Axe</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<form class="textLower lastblock", action="/">
+    <h1>Форма</h1>
+    <label> 
+      ФИО:<br/>
+      <input name="name"
+          type="name"
+          pattern="[А-Яа-я]*?\s[А-Яа-я]*?\s[А-Яа-я]*"
+          required
+          placeholder="Введите ФИО" /> 
     </label><br/>
+
+    <label>
+      Номер телефона:<br/>
+      <input name="tel"
+          minlength="12"
+          value="+7"
+          pattern="+[7]{1}[0-9]{3}[0-9]{3}[0-9]{4}"
+          required
+          >
+  </label><br/>
 
     <label>
         Текстовое поле email:<br />
         <input name="field-email"
           type="email"
+          required
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
           placeholder="Введите вашу почту" />
       </label><br />
 
       <label>
         Дата рождения:<br/>
         <input date = "field-date"
-            type = "date">
+            type = "date"
+            required>
       </label><br/>
+
       Выберете ваш пол:<br />
       <label><input type="radio" checked="checked"
         name="radio" value="Мужской" />
         Мужской</label>
+
       <label><input type="radio"
         name="radio" value="Женский" />
         Женский</label><br />
@@ -122,7 +182,7 @@
 
           <label>
             Ваша биография:<br />
-            <textarea name="field-name-2"></textarea>
+            <textarea name="field-boi" minlength="50" required></textarea>
           </label><br />
 
           С контрактом ознакомлен
@@ -131,6 +191,10 @@
         </label>
       <input type="submit" value="Сохранить" />
     </form>
-  </main>
+  </div>
+</div>
+<footer class="foot">
+  <h2>(c) Каржановский Илья</h2>
+</footer>
 </body>
 </html>
