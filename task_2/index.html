@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="about.html">
-    <link rel="stylesheet" href="memeday.html">
-    <link rel="stylesheet" href="offer.html">
+    <link rel="stylesheet" href="offers.html">
+    <link rel="stylesheet" href="picture.html">
     <title>Работа №2</title>
 </head>
 
 <body>
   <nav class="tab">
-    <button onclick="location.href='memeday.html';" class="textLower">Картинка дня</button>
-    <button onclick="location.href='offer.html';" class="textLower">Предложить мем</button>
-    <button onclick="location.href='about.html';" class="textLower">О нас</button>
+    <button onclick="location.href='picture.html';" class="textLower">Лучшая картинка</button>
+    <button onclick="location.href='offers.html';" class="textLower">Страница с предложениями</button>
+    <button onclick="location.href='about.html';" class="textLower">Информация о нас</button>
 </nav>
 
 <header>
     <h1 class="welcome"> Добро пожаловать на сайт Beautiful pictures</h1>
-    <!-- <div style="width:100%; background-color:rgb(215, 245, 245);  height:120px;">
-        <img class="pic" src="img/image3.jpg"/>  -->
+    <div style="width:100%; background-color:moccasin;  height:120px;">
+        <img class="pic" src="img/image3.jpg"/> 
         
     </div>
 </header>
@@ -27,11 +27,12 @@
 <div class="Content">
   <h1 class="mainText">Список гиперссылок</h1>
   <div class="line1">
+  <ul>
     <li><a href="//www.kubsu.ru">Абсолютная гипперссылка на сайт Кубгу</a></li></br>
     <li><a href="https://kubsu.ru/">Абсолютная гипперссылка на сайт Кубгу в протоколе https</a></li><br/>
-    <a href="https://github.com/"><img src="img/image.jpg" alt="Закат" style="width: 356px;" /></a><br/>
-    <li><a href="/about" > Сокращенная ссылка на внутреннюю страницу</a></li><br/>
-    <li><a href="/" > Сокращенная ссылка на главную страницу</a></li><br/>
+    <a href="https://github.com/"> <img src="img/image.jpg" alt="Закат" style="width: 356px;" /></a><br/>
+    <li><a href="page.html" > Сокращенная ссылка на внутреннюю страницу</a></li><br/>
+    <li><a href="index.html" > Сокращенная ссылка на главную страницу</a></li><br/>
     <li><a href="#jump">Ссылка на фрагмент текущей страницы</a></li><br/>
     <li><a href="index.html?product=width&color=black&size=m">Ссылка с параметрами</a></li><br/>
     <li><a href="index.html?id=123">Ссылка с параметром ID</a></li><br/>
@@ -52,16 +53,17 @@
     <li><a href="https://www.kubsu.ru" rel="nofollow">  Ссылка, по которой запрещен переход поисковикам</a></li><br/>
     <li><a href="https://www.kubsu.ru" rel="noindex"> Ссылка, запрещенная для индексации поисковиками</a></li><br/>
     <ol>
-        <li><a href="https://www.youtube.com/shorts/3n0HhQwP3_8" title ="Котики">Котики</a></li>
-        <li><a href="https://www.youtube.com/shorts/FYgvaRL2glU" title="Собачка"> Собачка</a></li>
-        <li><a href="https://www.youtube.com/shorts/E5HHMl3VVlQ" title ="Бобёр"> Бобёр</a></li>
+        <li><a href="https://ru.35photo.pro/genre_99/" title ="Фото природы">Красивые фотографии природы</a></li>
+        <li><a href="https://www.istockphoto.com/ru/фотографии/морской-пейзаж" title="Фото Моря"> Красивые фото моря</a></li>
+        <li><a href="https://akspic.ru/album/kosmos/3840x2160" title ="Фото космоса"> Красивые фото космоса</a></li>
     </ol>
     <li><a href="ftp://username:password@ftp.example.com/file.txt"> Cсылка на файл на сервере FTP с авторизацией</a></li><br/>
+  </ul>
     <h2 id="jump"> Маркер для пункта №6 </h2>
   </div>
 </div>
 
-<div class="tabl">
+<div class="block content">
   <h2 class="textTabl">Таблица</h2>
   <table class="tabl">
     </h1>
@@ -165,7 +167,7 @@
         <label>
             Ваш любимый язык программирования:<br />
             <select name="field-name-4[]"
-              multiple="multiple">
+              multiple="multiple" style="width: 200px; height: 200px;">
               <option value="Значение_1">Pascal</option>
               <option value="Значение_2" selected="selected">C</option>
               <option value="Значение_3" selected="selected">C++</option>
@@ -182,7 +184,7 @@
 
           <label>
             Ваша биография:<br />
-            <textarea name="field-boi" minlength="50" required></textarea>
+            <textarea name="field-boi" minlength="50" required style="width: 200px; height: 150px;"></textarea>
           </label><br />
 
           С контрактом ознакомлен
