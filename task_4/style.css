@@ -1,0 +1,154 @@
+body{
+    background-color:cadetblue;
+    margin: 0;
+    padding: 0;
+}
+
+.tab-text{
+   background-color:blanchedalmond;
+   color: #000;
+   float: right;
+   cursor: pointer;
+   padding: auto;
+   border: none;
+   transition: 0,5s;
+}
+
+.tab{
+    order: 1;
+}
+
+header{
+    background-color: moccasin;
+    order: 0;
+}
+
+.tab-text:hover{
+    background-color: moccasin;
+}
+
+.tabcontent{
+    padding: 6px 12px;
+    border-top: none;
+}
+
+.tab-text{
+    margin-inline: 3px;
+    padding-inline: 10px;
+    border-radius: 15px;
+    font-size: 18px;
+    background-color: cadetblue;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.pic{
+    margin-left: 30px; height: 100px; border-radius: 50px; width: 125px; margin-top: 10px;
+}
+
+.welcome{
+    position: absolute;
+    padding-top: 45px;
+    padding-left: 170px;
+    font-size: 25pt;
+}
+
+footer{
+    background-color:moccasin;
+    height: 80px;
+}
+
+.foot{
+    padding: 3px;
+    font-size: 20px;
+    text-align: left;
+}
+
+.line1{
+    text-align: center;
+}
+
+.flex-container{
+    display: flex;
+}
+
+.mainText{
+    text-align: center;
+    margin-left: 40px;
+}
+
+.Content{
+    background-color: moccasin;
+    width: 900px;
+    text-align: center;
+    margin: auto;
+    border-radius: 70px;
+}
+
+.textTabl{
+    text-align: center;
+    width: 900px;
+    margin: auto;
+}
+
+.tabl{
+    height: 200px;
+    width: 550px;
+    margin:auto;
+    text-align: left;
+    justify-content: flex;
+    color:rgb(255, 255, 255); 
+}
+
+.lastblock{
+    background-color: moccasin;
+    text-align: center;
+    width: 900px;
+    margin: auto;
+    border-radius: 70px;
+    margin-bottom: 20px;
+    height: 700px;
+}
+
+.table-block{
+    background-color: moccasin;
+    width: 900px;
+    margin: auto;
+    border-radius: 70px;
+    height: 250px;
+}
+
+ul{
+    list-style-position: inside;
+}
+
+@media screen and (max-width: 576px){
+    header{
+        margin-bottom: 30px;
+        background-color: moccasin;
+        height: 115px;
+        order: -1;
+    }
+
+    .flex-container1{
+        text-align: center;
+        display: flex;
+        flex-direction: row; 
+    }
+
+    .pic{
+        position: absolute;
+    }
+
+    .Content{
+        order: 2;
+    }
+
+    .block-content{
+        order: 1;
+    }
+}
+
