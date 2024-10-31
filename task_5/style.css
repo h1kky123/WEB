@@ -110,7 +110,6 @@ footer{
     background-color: rgba(130, 233, 233, 0.518);
     height: 70px;
     order: 3;
-    margin-top: 15px;
 }
 
 .footering{
@@ -132,17 +131,6 @@ footer{
     order: 2;
 }
 
-.calculator{
-    order: 3;
-    width: 53.5%;
-    background-color:rgba(130, 233, 233, 0.518);
-    border-radius: 20px;
-    margin: auto;
-}
-
-.calc_button{
-    margin-bottom: 10px;
-}
 
 @media (min-device-width: 576px){
     .button-container {
@@ -276,19 +264,6 @@ footer{
     .form_order{
         order: 2;
     }
-
-    .calculator{
-        order: 3;
-        width: 53.5%;
-        background-color:rgba(130, 233, 233, 0.518);
-        border-radius: 20px;
-        margin: auto;
-    }
-    
-    .calc_button{
-        margin-bottom: 10px;
-    }
-
 }
 
 @media (min-device-width: 768px){
@@ -416,18 +391,6 @@ footer{
     
     .form_order{
         order: 2;
-    }
-
-    .calculator{
-        order: 3;
-        width: 53.5%;
-        background-color:rgba(130, 233, 233, 0.518);
-        border-radius: 20px;
-        margin: auto;
-    }
-    
-    .calc_button{
-        margin-bottom: 10px;
     }
 }
 
@@ -561,18 +524,6 @@ footer{
     .form_order{
         order: 2;
     }
-
-    .calculator{
-        order: 3;
-        width: 53.5%;
-        background-color:rgba(130, 233, 233, 0.518);
-        border-radius: 20px;
-        margin: auto;
-    }
-    
-    .calc_button{
-        margin-bottom: 10px;
-    }
 }
 
 @media (min-device-width: 1200px){
@@ -700,17 +651,5 @@ footer{
     
     .form_order{
         order: 2;
-    }
-
-    .calculator{
-        order: 3;
-        width: 53.5%;
-        background-color:rgba(130, 233, 233, 0.518);
-        border-radius: 20px;
-        margin: auto;
-    }
-    
-    .calc_button{
-        margin-bottom: 10px;
     }
 }
