@@ -1,154 +1,655 @@
-body{
-    background-color:cadetblue;
-    margin: 0;
-    padding: 0;
-}
-
-.tab-text{
-   background-color:blanchedalmond;
-   color: #000;
-   float: right;
-   cursor: pointer;
-   padding: auto;
-   border: none;
-   transition: 0,5s;
-}
-
-.tab{
-    order: 1;
-}
-
-header{
-    background-color: moccasin;
-    order: 0;
-}
-
-.tab-text:hover{
-    background-color: moccasin;
-}
-
-.tabcontent{
-    padding: 6px 12px;
-    border-top: none;
-}
-
-.tab-text{
-    margin-inline: 3px;
-    padding-inline: 10px;
-    border-radius: 15px;
-    font-size: 18px;
-    background-color: cadetblue;
-}
-
 .flex-container{
     display: flex;
     flex-direction: column;
 }
 
-.pic{
-    margin-left: 30px; height: 100px; border-radius: 50px; width: 125px; margin-top: 10px;
+body{
+    margin: 0;
+    padding: 0;
+    background-color:cadetblue;
 }
 
-.welcome{
-    position: absolute;
-    padding-top: 45px;
-    padding-left: 170px;
-    font-size: 25pt;
+header{
+    background-color: rgba(130, 233, 233, 0.518);
+    height: 70px;
+}
+
+.heading {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
+.pfp{
+    margin-top: 3px;
+    margin-left: 5px;
+    border-radius: 50px; 
+    width: 65px;
+    height: 65px;
+}
+
+.site_welcome{
+    padding-left: 10px;
+    padding-top: 10px;
+    align-items: center;
+    flex-wrap: wrap; 
+    text-align: center;
+}
+
+.btn-primary{
+    background-color: rgba(130, 233, 233, 0.518);
+    border: 2px solid rgba(130, 233, 233, 0.518);
+    
+}
+
+.button-container{
+   a{
+    color: black;
+   }
+}
+
+.hyperlink{
+    li{
+        list-style-type: none;
+    }
+    
+    ul{
+        padding: 0;
+        margin: 0;
+    }
+    img{
+        width: 50%;
+    }
+    background-color:rgba(130, 233, 233, 0.518);
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
+
+.all_table{
+    overflow-x: auto;
+    display: block;
+    text-align: center;
+    background-color:rgba(130, 233, 233, 0.518);
+    border-radius: 20px;
+    table{
+        td{
+            border: 1px solid black;
+        }
+        th{
+            border: 1px solid black;
+        }        
+    }
+}
+
+.all_form{
+    background-color:rgba(130, 233, 233, 0.518);
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.form-control{
+    width: 70%;
 }
 
 footer{
-    background-color:moccasin;
-    height: 80px;
+    background-color: rgba(130, 233, 233, 0.518);
+    height: 70px;
+    order: 3;
 }
 
-.foot{
-    padding: 3px;
-    font-size: 20px;
-    text-align: left;
+.footering{
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    padding-top: 15px;
 }
 
-.line1{
-    text-align: center;
+.hyperlink_order{
+    order: 1;
 }
 
-.flex-container{
-    display: flex;
+.table_order{
+    order: 0;
 }
 
-.mainText{
-    text-align: center;
-    margin-left: 40px;
+.form_order{
+    order: 2;
 }
 
-.Content{
-    background-color: moccasin;
-    width: 900px;
-    text-align: center;
-    margin: auto;
-    border-radius: 70px;
-}
 
-.textTabl{
-    text-align: center;
-    width: 900px;
-    margin: auto;
-}
+@media (min-device-width: 576px){
+    .button-container {
+        position: static; 
+        right: 0;
+        z-index: 1000;    
+    }
+    
+    .btn{
+        
+        padding: 10px 20px;
+    }
 
-.tabl{
-    height: 200px;
-    width: 550px;
-    margin:auto;
-    text-align: left;
-    justify-content: flex;
-    color:rgb(255, 255, 255); 
-}
-
-.lastblock{
-    background-color: moccasin;
-    text-align: center;
-    width: 900px;
-    margin: auto;
-    border-radius: 70px;
-    margin-bottom: 20px;
-    height: 700px;
-}
-
-.table-block{
-    background-color: moccasin;
-    width: 900px;
-    margin: auto;
-    border-radius: 70px;
-    height: 250px;
-}
-
-ul{
-    list-style-position: inside;
-}
-
-@media screen and (max-width: 576px){
+    .flex-container{
+        display: flex;
+    }
+    
+    body{
+        margin: 0;
+        padding: 0;
+        background-color:  cadetblue;
+    }
+    
     header{
-        margin-bottom: 30px;
-        background-color: moccasin;
-        height: 115px;
+        background-color: rgba(130, 233, 233, 0.518);
+        height: 70px;
+    }
+    
+    .heading {
+        display: block;
+        flex-direction: column; 
+    }
+
+    .pfp{
+        position: absolute;
+        border-radius: 50px; 
+        width: 65px;
+        height: 65px;
+    }
+    
+    .site_welcome{
+        padding-top: 20px;
+        text-align: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .btn-primary{
+        background-color: rgba(130, 233, 233, 0.518);
+        border: 2px solid rgba(130, 233, 233, 0.518);
+        
+    }
+    
+    .button-container{
+       a{
+        color: black;
+       }
+    }
+    
+    .hyperlink{
+        li{
+            list-style-type: none;
+        }
+        
+        ul{
+            padding: 0;
+            margin: 0;
+        }
+        img{
+            width: 50%;
+        }
+        background-color:rgba(130, 233, 233, 0.518);
+        border-radius: 20px;
+        align-items: center;
+        text-align: center;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 5px;
+    }
+    
+    .all_table{
+        text-align: center;
+        background-color:rgba(130, 233, 233, 0.518);
+        border-radius: 20px;
+        table{
+            td{
+                border: 1px solid black;
+            }
+            th{
+                border: 1px solid black;
+            }        
+        }
+    }
+    
+    
+    .all_form{
+        background-color:rgba(130, 233, 233, 0.518);
+        border-radius: 20px;
+        text-align: center;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    footer{
+        background-color: rgba(130, 233, 233, 0.518);
+        height: 70px;
+        order: 3;
+    }
+    
+    .footering{
+        display: flex; 
+        align-items: center; 
+        justify-content: center;
+        padding-top: 15px;
+    }
+    
+    nav{
+        background-color: rgba(130, 233, 233, 0.518);
         order: -1;
     }
 
-    .flex-container1{
-        text-align: center;
-        display: flex;
-        flex-direction: row; 
+    .hyperlink_order{
+        order: 0;
     }
-
-    .pic{
-        position: absolute;
-    }
-
-    .Content{
-        order: 2;
-    }
-
-    .block-content{
+    
+    .table_order{
         order: 1;
+    }
+    
+    .form_order{
+        order: 2;
     }
 }
 
+@media (min-device-width: 768px){
+    .button-container {
+        position: static; 
+        right: 0;
+        z-index: 1000;    
+    }
+    
+    .btn{
+        
+        padding: 10px 20px;
+    }
+
+    .flex-container{
+        display: flex;
+    }
+    
+    body{
+        margin: 0;
+        padding: 0;
+        background-color:  cadetblue;
+    }
+    
+    header{
+        background-color: rgba(130, 233, 233, 0.518);
+        height: 70px;
+    }
+    
+    .heading {
+        display: block;
+        flex-direction: column; 
+    }
+
+    .pfp{
+        position: absolute;
+        border-radius: 50px; 
+        width: 65px;
+        height: 65px;
+    }
+    
+    .site_welcome{
+        padding-top: 20px;
+        text-align: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .btn-primary{
+        background-color: rgba(130, 233, 233, 0.518);
+        border: 2px solid rgba(130, 233, 233, 0.518);
+        
+    }
+    
+    .button-container{
+       a{
+        color: black;
+       }
+    }
+    
+    .hyperlink{
+        li{
+            list-style-type: none;
+        }
+        
+        ul{
+            padding: 0;
+            margin: 0;
+        }
+        img{
+            width: 50%;
+        }
+        background-color:rgba(130, 233, 233, 0.518);
+        border-radius: 20px;
+        align-items: center;
+        text-align: center;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 5px;
+    }
+    
+    .all_table{
+        text-align: center;
+        background-color:rgba(130, 233, 233, 0.518);
+        border-radius: 20px;
+        table{
+            td{
+                border: 1px solid black;
+            }
+            th{
+                border: 1px solid black;
+            }
+        }
+    }
+    
+    .all_form{
+        background-color:rgba(130, 233, 233, 0.518);
+        border-radius: 20px;
+        text-align: center;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    footer{
+        background-color: rgba(130, 233, 233, 0.518);
+        height: 70px;
+        order: 3;
+    }
+    
+    .footering{
+        display: flex; 
+        align-items: center; 
+        justify-content: center;
+        padding-top: 15px;
+    }
+    
+    .hyperlink_order{
+        order: 0;
+    }
+    
+    .table_order{
+        order: 1;
+    }
+    
+    .form_order{
+        order: 2;
+    }
+}
+
+    
+@media (min-device-width: 992px){
+    .button-container {
+        position: static; 
+        right: 0;
+        z-index: 1000;    
+    }
+    
+    .btn{
+        
+        padding: 10px 20px;
+    }
+
+    .flex-container{
+        display: flex;
+    }
+    
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: cadetblue;
+    }
+    
+    header{
+        background-color: rgba(130, 233, 233, 0.518);
+        height: 70px;
+    }
+    
+    .heading {
+        display: block;
+        flex-direction: column; 
+    }
+
+    .pfp{
+        position: absolute;
+        border-radius: 50px; 
+        width: 65px;
+        height: 65px;
+    }
+    
+    .site_welcome{
+        padding-top: 20px;
+        text-align: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .btn-primary{
+        background-color: rgba(130, 233, 233, 0.518);
+        border: 2px solid rgba(130, 233, 233, 0.518);
+        
+    }
+    
+    .button-container{
+       a{
+        color: black;
+       }
+    }
+    
+    .hyperlink{
+        li{
+            list-style-type: none;
+        }
+        
+        ul{
+            padding: 0;
+            margin: 0;
+        }
+        img{
+            width: 50%;
+        }
+        background-color:rgba(130, 233, 233, 0.518);
+        border-radius: 20px;
+        align-items: center;
+        text-align: center;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 5px;
+    }
+
+    .all_table{
+        text-align: center;
+        background-color:rgba(130, 233, 233, 0.518);
+        border-radius: 20px;
+        table{
+            .table_responsive{
+                height: 200px;
+            }
+            td{
+                border: 1px solid black;
+            }
+            th{
+                border: 1px solid black;
+            }
+        }
+    }
+    
+    .all_form{
+        background-color:rgba(130, 233, 233, 0.518);
+        border-radius: 20px;
+        text-align: center;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    footer{
+        background-color: rgba(130, 233, 233, 0.518);
+        height: 70px;
+        order: 3;
+    }
+    
+    .footering{
+        display: flex; 
+        align-items: center; 
+        justify-content: center;
+        padding-top: 15px;
+    }
+    
+    .hyperlink_order{
+        order: 0;
+    }
+    
+    .table_order{
+        order: 1;
+    }
+    
+    .form_order{
+        order: 2;
+    }
+}
+
+@media (min-device-width: 1200px){
+    .button-container {
+        position: static; 
+        right: 0;
+        z-index: 1000;    
+    }
+    
+    .btn{
+        
+        padding: 10px 20px;
+    }
+
+    .flex-container{
+        display: flex;
+    }
+    
+    body{
+        margin: 0;
+        padding: 0;
+        background-color:  cadetblue;
+    }
+    
+    header{
+        background-color: rgba(130, 233, 233, 0.518);
+        height: 70px;
+    }
+    
+    .heading {
+        display: block;
+        flex-direction: column; 
+    }
+
+    .pfp{
+        position: absolute;
+        border-radius: 50px; 
+        width: 65px;
+        height: 65px;
+    }
+    
+    .site_welcome{
+        padding-top: 20px;
+        text-align: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .btn-primary{
+        background-color: rgba(130, 233, 233, 0.518);
+        border: 2px solid rgba(130, 233, 233, 0.518);
+        
+    }
+    
+    .button-container{
+       a{
+        color: black;
+       }
+    }
+    
+    .hyperlink{
+        li{
+            list-style-type: none;
+        }
+        
+        ul{
+            padding: 0;
+            margin: 0;
+        }
+        img{
+            width: 50%;
+        }
+        background-color:rgba(130, 233, 233, 0.518);
+        border-radius: 20px;
+        align-items: center;
+        text-align: center;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 5px;
+    }
+     
+    .all_table{
+        text-align: center;
+        background-color:rgba(130, 233, 233, 0.518);
+        border-radius: 20px;
+        table{
+            td{
+                border: 1px solid black;
+            }
+            th{
+                border: 1px solid black;
+            }
+        }
+    }
+    
+    .all_form{
+        background-color:rgba(130, 233, 233, 0.518);
+        border-radius: 20px;
+        text-align: center;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    footer{
+        background-color: rgba(130, 233, 233, 0.518);
+        height: 70px;
+        order: 3;
+    }
+    
+    .footering{
+        display: flex; 
+        align-items: center; 
+        justify-content: center;
+        padding-top: 15px;
+    }
+    
+    .hyperlink_order{
+        order: 0;
+    }
+    
+    .table_order{
+        order: 1;
+    }
+    
+    .form_order{
+        order: 2;
+    }
+}
