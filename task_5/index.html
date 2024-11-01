@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta name = "viewport" content="width=device-width, initial-scale=1">
+    <title>Лаборатнорная 5</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        function calculator(){
+            const quantity = Math.abs(document.getElementById('quantity').value);
+            const product = document.getElementById('product').value;
+
+            let price;
+            if (product === 'item1') {
+                price = 500;
+            } else if (product === 'item2') {
+                price = 1000;
+            } else if (product === 'item3') {
+                price = 700;
+            }
+
+            const total = quantity * price;
+
+            document.getElementById('total').innerText = 'Итого: ' + total + " золота";
+        }
+    </script>
+</head>
+
+<body>
+    <div class="flex-container">
+
+        <header>
+            <div class="heading">
+                <div>
+                    <img class="pfp" src="img/image3.jpg"> 
+                </div> 
+                <div class="site_welcome"> 
+                    <h5><b>Добро пожаловать на сайт Beautiful pictures</b></h5>
+                </div>
+            </div>
+        </header> 
+    
+        <nav>
+            <div class="button-container">
+                <div class="container mt-3">
+                    <div class="row">
+                        <div class="col-12 col-sm-4 mb-1">
+                            <a href="about.html" class="btn btn-primary btn-block">О нас</a>
+                        </div>
+                        <div class="col-12 col-sm-4 mb-1">
+                            <a href="picture.html" class="btn btn-primary btn-block">Лучшая картинка</a>
+                        </div>
+                        <div class="col-12 col-sm-4 mb-1">
+                            <a href="offers.html" class="btn btn-primary btn-block">Предложения</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container mt-3 hyperlink_order">
+            <div class="hyperlink">
+                <h4><b>Список гиперссылок</b></h4>
+                <ul>
+                  <li><a href="//www.kubsu.ru">Абсолютная гипперссылка на сайт Кубгу</a></li>
+                  <li><a href="https://kubsu.ru/">Абсолютная гипперссылка на сайт Кубгу в протоколе https</a></li>
+                  <a href="https://github.com/"> <img src="img/image.jpg" alt="Закат" style="width: 356px;" /></a>
+                  <li><a href="page.html" > Сокращенная ссылка на внутреннюю страницу</a></li>
+                  <li><a href="index.html" > Сокращенная ссылка на главную страницу</a></li>
+                  <li><a href="#section1">Ссылка на фрагмент текущей страницы</a></li>
+                  <li><a href="index.html?product=width&color=black&size=m">Ссылка с параметрами</a></li>
+                  <li><a href="index.html?id=123">Ссылка с параметром ID</a></li>
+                  <li><a href="index_relativeReference.html"> Относительная ссылка внутри каталога</a></li>
+                  <li><a href="about/page.html">Cсылка на относительную на страницу в каталоге about</a></li>
+                  <li><a href="../index.html">Ссылка в каталог уровнем выше текущего </a></li>
+                  <li><a href="../../index.html">Ссылка в каталог двумя уровнями выше текущего </a></li>
+                  <li>Контекстная ссылка <a href="https://www.kubsu.ru"> ведёт на сайт КубГУ</a></li>
+                  <li><a href="https://ru.wikipedia.org/wiki/HTML#:~:text=%D0%A0%D1%8B%D0%BD%D0%BE%D1%87%D0%BD%D1%8B%D0%B5%20%D0%B4%D0%BE%D0%BB%D0%B8.-,%D0%92%D0%B5%D1%80%D1%81%D0%B8%D0%B8,-%5B%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C%20%7C" >Ссылка на фрагмент страницы стороннего сайта</a>
+                  <li>Ссылки из прямоугольных и круглых областей картинки</li>
+                  <img src="img/image2.jpg" alt="Изображние" usemap="#imgmap" style="width: 356px;">
+                  <map name="imgmap">
+                    <area shape="rect" coords="0,0,200,330" href="https://kubsu.ru">
+                    <area shape="circle" coords="20,20,300,400" href="https://github.com/">
+                  </map>
+                  <li><a href="#">Ссылка с пустым href</a></li>
+                  <li><a>Ссылка без href</a></li>
+                  <li><a href="https://www.kubsu.ru" rel="nofollow">  Ссылка, по которой запрещен переход поисковикам</a></li>
+                  <li><a href="https://www.kubsu.ru" rel="noindex"> Ссылка, запрещенная для индексации поисковиками</a></li>
+                  <ol>
+                      <li><a href="https://ru.35photo.pro/genre_99/" title ="Фото природы">Красивые фотографии природы</a></li>
+                      <li><a href="https://www.istockphoto.com/ru/фотографии/морской-пейзаж" title="Фото Моря"> Красивые фото моря</a></li>
+                      <li><a href="https://akspic.ru/album/kosmos/3840x2160" title ="Фото космоса"> Красивые фото космоса</a></li>
+                  </ol>
+                  <li><a href="ftp://username:password@ftp.example.com/file.txt"> Cсылка на файл на сервере FTP с авторизацией</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="container mt-3 table_order">
+            <div class=" all_table col ">
+              <h2 class="textTabl">Таблица</h2>
+              <table class="table">
+                </h1>
+                <thead style="background-color: mediumslateblue;">
+                  <td>Герой</td>
+                  <td>Сила</td>
+                  <td>Ловкость</td>
+                  <td>Интеллект</td>
+                </thead>
+        
+                <tbody>
+                  <tr style="background-color: dimgrey;">
+                    <th>Axe</th>
+                    <th>25</th>
+                    <th>20</th>
+                    <th>18</th>
+                  </tr>
+                  <tr style="background-color: mediumslateblue;">
+                    <th>Arc Warden</th>
+                    <th>20</th>
+                    <th>20</th>
+                    <th>24</th>
+                  </tr>
+                  <tr style="background-color: dimgrey;">
+                    <th>Bristleback</th>
+                    <th>22</th>
+                    <th>17</th>
+                    <th>14</th> 
+                  </tr>
+        
+                  <tr style="background-color: mediumslateblue;">
+                    <th>Luna</th>
+                    <th>21</th>
+                    <th>24</th>
+                    <th>23</th>
+                  </tr>
+        
+                  <tr style="background-color: dimgrey;">
+                    <th>Storm Spirit</th>
+                    <th>21</th>
+                    <th>22</th>
+                    <th>23</th>
+                  </tr>
+        
+                  <tr>
+                    <td colspan="4" style="background-color: mediumslateblue;">Самый сильный герой из всей таблицы это - Axe</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+        </div>
+
+        <div class="container mt-3 mb-3 form_order">
+            <div class="all_form">
+                <h4><b>Форма</b></h4>
+                <form>
+                    <div class="form-group">
+                        <label>ФИО:</label>
+                        <input name="name" type="text" class="form-control" required pattern="[А-Яа-я]*?\s[А-Яа-я]*?\s[А-Яа-я]*" placeholder="Ваше ФИО"/> 
+                    </div>
+            
+                    <div class="form-group">
+                        <label >Номер телефона:</label>
+                        <input name="tel" type="tel" minlength="12" value="+7" class="form-control" pattern="+[7]{1}[0-9]{3}[0-9]{3}[0-9]{4}" required placeholder="Введите номер телефона"/>
+                    </div>
+            
+                    <div class="form-group">
+                        <label>Электронная почта:</label>
+                        <input name="email" type="email" class="form-control" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Ваш email" /> 
+                    </div>
+            
+                    <div class="form-group">
+                        <label>Дата:</label>
+                        <input name="date" type="date" class="form-control" required />
+                    </div>
+            
+                    <div class="form-group">
+                        <label>Ваш пол:</label>
+                        <div style="display: flex; flex-direction: row">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" checked name="radio-button"" />
+                                <label class="form-check-label">Мужской</label>
+                            </div>
+                            <div class="form-check" style="margin-left: 20px;">
+                                <input class="form-check-input" type="radio" name="radio-button" />
+                                <label class="form-check-label">Женский</label>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div id="section1">
+                        <b>Маркер для шестой ссылки</b>
+                    </div>
+            
+                    <div class="form-group">
+                        <label>Ваш любимый язык программирования:</label>
+                        <select name="field-language" class="form-control" multiple>
+                            <option>Pascal</option>
+                            <option>C/C++</option>
+                            <option>JavaScript</option>
+                            <option>PHP</option>
+                            <option>Python</option>
+                            <option>Java</option>
+                            <option>Haskel</option>
+                            <option>Clojure</option>
+                            <option>Prolog</option>
+                            <option>Scala</option>
+                        </select>
+                    </div>
+            
+                    <div class="form-group">
+                        <label>Расскажите о себе:</label>
+                        <textarea name="field-bio" class="form-control" minlength="50" required></textarea>
+                    </div>
+            
+                    <div class="form-check">
+                        <label>С контрактом ознакомлен!</label>
+                        <input type="checkbox" checked name="checkbox1"/>
+                        <button type="submit" class="btn btn-primary mb-3" style="color: black;">Сохранить!</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="calculator">
+            <div class="flex_container">
+                <div class="container mt-4">
+                    
+                    <div class="text-center">
+                        <h5>Расcчитай стоимость</h5>    
+                    </div>
+
+                    <form class="mt-4">
+                        <div class="form-group">
+                            <label for="product">Выбрать вещь:</label>
+                            <select class="form-control" id="product">
+                                <option value="item1">Сапог - 500 золота</option>
+                                <option value="item2">Меч - 1000 золота</option>
+                                <option value="item3">Рюкзак - 700 золота</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="quantity">Количество:</label>
+                            <input type="number" class="form-control" id="quantity" placeholder="Введите количество товара">
+                        </div>
+                        
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="calc_button">
+                                <button type="button" class="btn btn-primary" onclick="calculator()">Посчитать</button>    
+                            </div>
+                            <div>
+                                <h5 id="total">Итого: 0 рублей</h5>
+                            </div>
+                        </div>
+                    </form>
+            
+                </div>
+            </div>
+        </div>
+           
+        <footer>
+            <div class="footering"> 
+                <h3><b>(с) Каржановский Илья</b></h3>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
