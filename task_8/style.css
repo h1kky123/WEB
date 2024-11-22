@@ -1,0 +1,49 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.container {
+    flex: 1; /* Это позволяет контейнеру занимать доступное пространство */
+}
+
+header {
+    background-color: #333;
+}
+
+.form-control {
+    margin-bottom: 8px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    font-size: 20px;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.4);
+}
+
+.modal-dialog {
+    max-width: 500px;
+    width: 90vw;
+    margin: 1.75rem auto;
+}
+
+.modal-content {
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
